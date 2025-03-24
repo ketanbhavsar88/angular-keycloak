@@ -11,12 +11,11 @@ import { RouterLink } from '@angular/router';
 import { KeycloakProfile } from 'keycloak-js';
 
 @Component({
-  selector: 'app-protected-page',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  templateUrl: './private-page.component.html',
-  styleUrl: './private-page.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-protected-page',
+    imports: [CommonModule, RouterLink],
+    templateUrl: './private-page.component.html',
+    styleUrl: './private-page.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PrivatePageComponent implements OnInit {
   readonly #authService: AuthService = inject(AuthService);

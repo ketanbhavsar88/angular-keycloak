@@ -8,11 +8,10 @@ import { RouterLink } from '@angular/router';
  * This component is responsible for rendering the main page view and handling user authentication.
  */
 @Component({
-  selector: 'app-main-page',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.css',
+    selector: 'app-main-page',
+    imports: [CommonModule, RouterLink],
+    templateUrl: './main-page.component.html',
+    styleUrl: './main-page.component.css'
 })
 export class MainPageComponent {
   readonly #authService = inject(AuthService);

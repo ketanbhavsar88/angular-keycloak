@@ -70,7 +70,7 @@
     }
   },
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "npm"
   },
   "defaultProject": "demo-wks"
 }
